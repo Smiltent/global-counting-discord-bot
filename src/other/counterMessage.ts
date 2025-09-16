@@ -6,8 +6,8 @@ export function counterMessage(): ContainerBuilder {
     return new ContainerBuilder()
         .addTextDisplayComponents(
             textDisplay => textDisplay
-                .setContent('## Example.'),
+                .setContent('## Global Counting Bot!'),
             textDisplay => textDisplay
-                .setContent(`Current count: \`${getCurrentCount()}\`.`),
+                .setContent(`Current count: ${getCurrentCount()}.`),
         )
 }

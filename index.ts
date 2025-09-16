@@ -103,12 +103,16 @@ export function addToCurrentCount() {
 export function getCurrentCount() {
     const filePath = path.join(__dirname, "currentCount.txt")
     const file = fs.readFileSync(filePath, "utf-8")
-
     let current = parseInt(file, 10)
+
     if (isNaN(current)) {
         current = 0
     }
-    return current
+    if (current % 100 === 0 && current !== 0) {
+        return `:tada: \`${current}\` :tada:`
+    }
+
+    return `\`${current}\``
 }
 
 // !==================!
