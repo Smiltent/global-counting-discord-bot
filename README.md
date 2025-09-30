@@ -12,7 +12,7 @@ bun i && bun run     # if you use bun, i don't use node
 ```
 
 # Features
-* [x] Allowing users to count
+* [x] Allowing users to count and being able to see the number
 * [ ] A leaderboard showing how much a Guild has counted in total
 * [ ] A leaderboard showing how much Individual Users in a Guild have counted (Only shows current Guild)
 * [ ] A leaderboard showing how much Individual Users have counted
